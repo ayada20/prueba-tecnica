@@ -1,0 +1,167 @@
+{
+  "navItems": [
+    {
+      "name": "Ayada",
+      "link": ""
+    },
+    {
+      "name": "Inicio",
+      "link": ""
+    },
+
+    {
+      "name": "Proyectos",
+      "link": ""
+    },
+
+    {
+      "name": "Sobre mí",
+      "link": ""
+    },
+
+    {
+      "name": "Contacto",
+      "link": ""
+    }
+  ],
+
+  "hero": {
+    "image": "/img/profile.jpg",
+    "title": "Ayada El Houssaini",
+    "subtitle": "Web Developer",
+    "description": "A highly motivated student with a passion for web development, seeking oportunities to apply and expand my skills in a professional eniroment, creating beautiful and function digital experiences.",
+    "buttonText": "View My Work"
+  },
+
+  "experience": {
+    "mainTitle": "Work Experience",
+    "icon": "mi/icono",
+    "items": [
+      {
+        "title": "3 years",
+        "subtitle": "Software Developer at Tech",
+        "description": "Instrumental in the full software ddevelopment lifecycle for diverse client projects, ensuring robust performance and high-quality deliverables."
+      },
+      {
+        "title": "Current",
+        "subtitle": "Software Engineer at Alebat",
+        "description": "Pioneering database architecture and leading development on  innovative Vue.js projects, driving technoical excellence and user-centric solution."
+      },
+      {
+        "title": "2 months",
+        "subtitle": "Intern in Alebat",
+        "description": "Supported senior developers by meticulousy debugging code and implementing key features, ganing fundational industry experience."
+      }
+    ]
+  },
+
+  "projects": {
+    "mainTitleProjects": "Projects",
+    "items": [
+      {
+        "image": "mi/imagen",
+        "title": "Event Decoration PLatform",
+        "decription": "A web platform for browsing and booking event decoration services.",
+        "linkText": "View Project ->"
+      },
+      {
+        "image": "mi/imagen",
+        "title": "Languaje Learning App",
+        "decription": "A mobile app to help users learn new languajes through interactive lessons",
+        "linkText": "View Project ->"
+      },
+      {
+        "image": "mi/imagen",
+        "title": "Habit-Tracking App",
+        "decription": "An application to help users build and maintain positive daily habits.",
+        "linkText": "View Project ->"
+      }
+    ]
+  },
+
+  "skills": {
+    "titleTechnical": "Technical Skills",
+    "technicalSkills": [
+      {
+        "name": "Java"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "Databases"
+      },
+      {
+        "name": "Vue.js"
+      },
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "SCSS"
+      },
+      {
+        "name": "Tailwind"
+      },
+      {
+        "name": "Git"
+      },
+      {
+        "name": "TypeScript"
+      }
+    ],
+    "titleSoft": "Soft Skills",
+    "softSkills": [
+      {
+        "icon": "/static/trabajo-en-equipo.png",
+        "name": "Teamwork"
+      },
+      {
+        "icon": "/static/circular.png",
+        "name": "Adaptability"
+      },
+      {
+        "icon": "/static/exitoso.png",
+        "name": "Problem Solving"
+      },
+      {
+        "icon": "/static/conversacion.png",
+        "name": "Communication"
+      }
+    ]
+  },
+
+  "education": {
+    "titleEducation": "Education",
+    "items": [
+      {
+        "icon": "/static/sombrero-de-graduacion.png",
+        "title": "Higher Degree in Web Application Development DAW",
+        "place": "IES Juan de Herrera, El Escorial",
+        "yearGraduation": "Graduated 2025"
+      },
+
+      {
+        "icon": "/static/sombrero-de-graduacion.png",
+        "title": "Bachelor",
+        "place": "IES Juan de Herrera, El Escorial",
+        "yearGraduation": "Graduated 2022"
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Get in Touch",
+    "text": "I'm currently looking for new opportunities. My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "iconoEmail": "/static/correo-electronico.png",
+    "iconoGit": "/static/github.png",
+    "iconoLinkedin": "/static/linkedin.png",
+    "derechos": " ©2024 Ayada El Houssaini. All Rights Reserved."
+  }
+}
