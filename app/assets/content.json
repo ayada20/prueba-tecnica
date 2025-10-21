@@ -1,35 +1,19 @@
 {
-  "navItems": [
-    {
-      "name": "Ayada",
-      "link": ""
-    },
-    {
-      "name": "Inicio",
-      "link": ""
-    },
-
-    {
-      "name": "Proyectos",
-      "link": ""
-    },
-
-    {
-      "name": "Sobre mí",
-      "link": ""
-    },
-
-    {
-      "name": "Contacto",
-      "link": ""
-    }
+  "headerItems": [
+    { "name": "Ayada", "link": "" },
+    { "name": "Home", "link": "" },
+    { "name": "Experience", "link": "" },
+    { "name": "Projects", "link": "" },
+    { "name": "Skills", "link": "" },
+    { "name": "Education", "link": "" },
+    { "name": "Contact", "link": "" }
   ],
 
   "hero": {
-    "image": "/img/profile.jpg",
+    "image": "/static/linkedin.png",
     "title": "Ayada El Houssaini",
     "subtitle": "Web Developer",
-    "description": "A highly motivated student with a passion for web development, seeking oportunities to apply and expand my skills in a professional eniroment, creating beautiful and function digital experiences.",
+    "description": "A highly motivated student with a passion for web development, seeking opportunities to apply and expand my skills in a professional environment, creating beautiful and function digital experiences.",
     "buttonText": "View My Work"
   },
 
@@ -38,15 +22,16 @@
     "icon": "mi/icono",
     "items": [
       {
-        "title": "3 years",
-        "subtitle": "Software Developer at Tech",
-        "description": "Instrumental in the full software ddevelopment lifecycle for diverse client projects, ensuring robust performance and high-quality deliverables."
-      },
-      {
         "title": "Current",
         "subtitle": "Software Engineer at Alebat",
         "description": "Pioneering database architecture and leading development on  innovative Vue.js projects, driving technoical excellence and user-centric solution."
       },
+      {
+        "title": "3 years",
+        "subtitle": "Software Developer at Tech",
+        "description": "Instrumental in the full software ddevelopment lifecycle for diverse client projects, ensuring robust performance and high-quality deliverables."
+      },
+
       {
         "title": "2 months",
         "subtitle": "Intern in Alebat",
@@ -65,7 +50,7 @@
         "linkText": "View Project ->"
       },
       {
-        "image": "mi/imagen",
+        "image": "static/trabajo-en-equipo.png",
         "title": "Languaje Learning App",
         "decription": "A mobile app to help users learn new languajes through interactive lessons",
         "linkText": "View Project ->"
