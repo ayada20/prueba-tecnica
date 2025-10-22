@@ -11,7 +11,7 @@ defineProps<{ hero: HeroData }>();
 </script>
 
 <template>
-  <section>
+  <section class="general">
     <img class="imagen" :src="hero.image" :alt="hero.title" />
     <div class="information">
       <h1 class="titulo">{{ hero.title }}</h1>
@@ -24,9 +24,11 @@ defineProps<{ hero: HeroData }>();
 </template>
 
 <style lang="scss" scoped>
-section {
-  background-color: black;
-  color: white;
+@import "@/assets/estilos.scss";
+
+.general {
+  background-color: $background-color;
+  color: $title-color;
   padding: 4em;
 }
 .imagen {
@@ -39,16 +41,17 @@ section {
 }
 
 .titulo {
-  color: rgb(227, 227, 227);
-  font-family: serif;
+  color: $title-color;
+  font-family: $title-font;
   font-size: 5.2em;
 }
 .information {
-  padding: 5em;
+  padding: 5.5em;
+  margin-left: 3em;
 }
 .subtitulo {
-  color: rgb(198, 163, 49);
-  font-family: serif;
+  color: $primary-color;
+  font-family: $title-font;
   font-style: italic;
   font-size: 2.8em;
   margin-top: 0.5em;
@@ -56,16 +59,16 @@ section {
 }
 
 .texto {
-  color: rgb(131, 141, 152);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: $text-color;
+  font-family: $text-font;
   font-size: 1.7em;
   padding-right: 3em;
   margin-bottom: 0.7em;
+  max-width: 40em;
 }
 .btn {
-  background-color: rgb(198, 163, 49);
-  color: black;
+  background-color: $primary-color;
+  color: $background-color;
 
   border-radius: 0.5em;
   padding: 1em 2.5em;
@@ -74,7 +77,37 @@ section {
   margin-top: 1.2em;
 
   &:hover {
-    background-color: rgb(201, 173, 81);
+    background-color: $text-color;
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 50em) {
+  .imagen {
+    max-width: 10em;
+    padding-top: 1em;
+  }
+
+  .titulo {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .information {
+    padding: 1em;
+    margin: 0;
+  }
+
+  .subtitulo {
+    font-size: 1.5em;
+  }
+
+  .texto {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1em;
   }
 }
 </style>

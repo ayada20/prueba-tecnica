@@ -44,20 +44,20 @@
     "mainTitleProjects": "Projects",
     "items": [
       {
-        "image": "mi/imagen",
+        "image": "static/events.png",
         "title": "Event Decoration PLatform",
         "decription": "A web platform for browsing and booking event decoration services.",
         "linkText": "View Project ->"
       },
       {
-        "image": "static/trabajo-en-equipo.png",
+        "image": "static/languaje.png",
         "title": "Languaje Learning App",
         "decription": "A mobile app to help users learn new languajes through interactive lessons",
         "linkText": "View Project ->"
       },
       {
-        "image": "mi/imagen",
-        "title": "Habit-Tracking App",
+        "image": "static/habit.png",
+        "title": "Habit-Tracking\nApp",
         "decription": "An application to help users build and maintain positive daily habits.",
         "linkText": "View Project ->"
       }
@@ -65,6 +65,7 @@
   },
 
   "skills": {
+    "generalTitle": "Skills",
     "titleTechnical": "Technical Skills",
     "technicalSkills": [
       {
@@ -107,13 +108,14 @@
         "icon": "/static/trabajo-en-equipo.png",
         "name": "Teamwork"
       },
-      {
-        "icon": "/static/circular.png",
-        "name": "Adaptability"
-      },
+
       {
         "icon": "/static/exitoso.png",
         "name": "Problem Solving"
+      },
+      {
+        "icon": "/static/circular.png",
+        "name": "Adaptability"
       },
       {
         "icon": "/static/conversacion.png",
