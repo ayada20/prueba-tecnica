@@ -10,7 +10,7 @@ defineProps<{ headerItems: NavItem[] }>();
 <template>
   <nav aria-label="menu">
     <div class="navbar-list">
-      <ul>
+      <ul class="lista">
         <li v-for="item in headerItems" :key="item.name">
           <a :href="item.link">{{ item.name }}</a>
         </li>
@@ -20,13 +20,15 @@ defineProps<{ headerItems: NavItem[] }>();
 </template>
 
 <style lang="scss" scoped>
+@import "@/assets/estilos.scss";
+
 nav {
-  background-color: black;
+  background-color: $background-color;
   padding: 1em;
-  border-bottom: 0.001em solid rgb(223, 194, 65);
+  border-bottom: 0.001em solid $primary-color;
 
   .navbar-list {
-    ul {
+    .lista {
       display: flex;
       align-items: center;
       list-style: none;
@@ -36,8 +38,8 @@ nav {
         a {
           font-weight: bold;
           font-size: 1.2em;
-          font-family: Arial, Helvetica, sans-serif;
-          color: rgb(214, 207, 207);
+          font-family: $text-font;
+          color: $title-color;
           text-decoration: none;
           margin-left: 1.5em;
           &:hover {
@@ -50,12 +52,22 @@ nav {
           a {
             font-size: 2.1em;
             text-decoration: none;
-            font-family: serif;
-            color: rgb(214, 207, 207);
+            font-family: $title-font;
+            color: $title-color;
           }
         }
       }
     }
+  }
+}
+
+@media (max-width: 50em) {
+  .lista li a {
+    display: none;
+  }
+
+  .lista li:first-child a {
+    display: block;
   }
 }
 </style>

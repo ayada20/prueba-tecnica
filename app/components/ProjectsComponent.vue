@@ -14,11 +14,12 @@ defineProps<{ projects: ProjectsData }>();
 </script>
 
 <template>
-  <section aria-labelledby="projects-title">
-    <h2 id="projects-title">{{ projects.mainTitleProjects }}</h2>
-    <ul>
-      <li v-for="item in projects.items" :key="item.title">
-        <article>
+  <section class="general" aria-labelledby="projects-title">
+    <h2 class="title" id="projects-title">{{ projects.mainTitleProjects }}</h2>
+
+    <ul class="listaGeneral">
+      <li class="lista" v-for="item in projects.items" :key="item.title">
+        <article class="block">
           <img class="image" :src="item.image" :alt="item.title" />
           <h3 class="titulo">{{ item.title }}</h3>
           <p class="description">{{ item.decription }}</p>
@@ -29,74 +30,97 @@ defineProps<{ projects: ProjectsData }>();
   </section>
 </template>
 <style lang="scss" scoped>
-section {
-  background-color: black;
-  color: white;
+@import "@/assets/estilos.scss";
+
+.general {
+  background-color: $background-color;
+  color: $title-color;
   padding: 5em;
 }
-h2 {
-  display: flex;
-  justify-content: center;
+.title {
+  @include flex-center;
   font-size: 4.4em;
-  color: white;
+  color: $title-color;
   margin-top: 0.7em;
   margin-bottom: 1.2em;
 }
 
-ul {
+.listaGeneral {
   list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 10em;
   margin-bottom: 6em;
 }
 
-li {
+.lista {
   border-radius: 1.5em;
-  background-color: #313133;
-  width: 20em;
-  height: 33em;
+  background-color: $secondary-color;
+  width: 22em;
+  height: 35em;
+}
+.block {
+  @include flex-center;
+  flex-direction: column;
+  align-items: center;
+}
 
-  article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.image {
+  width: 21.9em;
+  height: 12em;
+}
+
+.titulo {
+  padding: 1em;
+  font-size: 1.8em;
+  font-family: $text-font;
+  white-space: pre-line;
+}
+
+.description {
+  color: $text-color;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+  padding: 0.8em;
+  text-align: start;
+  margin-left: 0.7em;
+}
+
+.btn {
+  color: $primary-color;
+  text-decoration: none;
+  font-family: $text-font;
+  font-weight: bold;
+  font-size: 1.6em;
+
+  &:hover {
+    color: $text-color;
   }
+}
 
+@media (max-width: 50em) {
+  .title {
+    font-size: 2em;
+  }
   .image {
-    width: 10em;
-    height: 10em;
+    width: 14.9em;
+    height: 6em;
   }
 
   .titulo {
-    padding: 1em;
-    font-size: 1.8em;
-    text-align: start;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-size: 1em;
   }
 
   .description {
     font-size: 1em;
-    color: #666;
-    text-align: center;
-    margin-bottom: 2em;
-    font-size: 1.4em;
-    padding: 0.8em;
-    text-align: start;
-    margin-left: 0.7em;
-    color: rgb(155, 166, 176);
   }
 
   .btn {
-    color: rgb(234, 196, 73);
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1em;
+  }
+  .lista {
+    width: 15em;
+    height: 20em;
   }
 }
 </style>
