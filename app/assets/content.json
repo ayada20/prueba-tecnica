@@ -1,6 +1,6 @@
 {
   "headerItems": [
-    { "name": "Ayada", "link": "" },
+    { "name": "Ayada", "link": "/" },
     { "name": "Home", "link": "" },
     { "name": "Experience", "link": "" },
     { "name": "Projects", "link": "" },
@@ -10,7 +10,7 @@
   ],
 
   "hero": {
-    "image": "/static/linkedin.png",
+    "image": "/static/img.jpeg",
     "title": "Ayada El Houssaini",
     "subtitle": "Web Developer",
     "description": "A highly motivated student with a passion for web development, seeking opportunities to apply and expand my skills in a professional environment, creating beautiful and function digital experiences.",
@@ -41,6 +41,7 @@
   },
 
   "projects": {
+    "id": "uno",
     "mainTitleProjects": "Projects",
     "items": [
       {

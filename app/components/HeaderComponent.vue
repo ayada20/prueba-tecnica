@@ -24,7 +24,7 @@ defineProps<{ headerItems: NavItem[] }>();
 
 nav {
   background-color: $background-color;
-  padding: 1em;
+  padding: 1.5em;
   border-bottom: 0.001em solid $primary-color;
 
   .navbar-list {
