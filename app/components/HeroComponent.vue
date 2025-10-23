@@ -29,15 +29,14 @@ defineProps<{ hero: HeroData }>();
 .general {
   background-color: $background-color;
   color: $title-color;
-  padding: 4em;
+  padding: 9em;
 }
 .imagen {
   display: block;
   margin: auto;
-  padding-top: 6em;
-
-  border-radius: 2em;
-  max-width: 18em;
+  width: 15em;
+  border-radius: 9em;
+  border: solid 0.01em $primary-color;
 }
 
 .titulo {
@@ -84,8 +83,7 @@ defineProps<{ hero: HeroData }>();
 
 @media (max-width: 50em) {
   .imagen {
-    max-width: 10em;
-    padding-top: 1em;
+    max-width: 3em;
   }
 
   .titulo {
